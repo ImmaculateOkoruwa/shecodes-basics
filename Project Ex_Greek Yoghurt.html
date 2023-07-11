@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greek Yogurt 🥛</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        89.8deg,
+        rgb(204, 156, 223) 0.3%,
+        rgb(155, 219, 245) 20.4%,
+        rgb(245, 183, 208) 40.2%,
+        rgb(250, 186, 98) 62.9%,
+        rgb(234, 238, 240) 81.9%,
+        rgb(250, 245, 171) 99.2%
+      );
+      width: 50%;
+      margin: 5px auto;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+      text-align: center;
+      color: #7d51e8;
+    }
+    h2 {
+      text-align: center;
+      border: 1px solid #7d51e8;
+      padding: 15px;
+      font-size: 18px;
+      border-radius: 4px;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 400px;
+      border-radius: 10px;
+    }
+    p {
+      line-height: 1.5;
+      font-size: 15px;
+      margin: 20px 0 10px;
+      text-align: justify;
+    }
+    button {
+      display: block;
+      margin: 20px auto;
+      background: #7d51e8;
+      color: white;
+      font-size: 18px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 200ms ease-in-out;
+    }
+    button:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 5px 10px;
+    }
+    .learn-more {
+      color: #7d51e8;
+      text-decoration: none;
+      font-size: 12px;
+      margin: auto;
+    }
+    .learn-more:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>I love Yogurt</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/354/original/images.jpg?1684336484"
+        alt="Greek Yogurt" />
+      <p>
+        Strained yogurt, Greek yogurt, yogurt cheese, sack yogurt, or kerned
+        yogurt is yogurt that has been strained to remove most of its whey,
+        resulting in a thicker consistency than normal unstrained yogurt, while
+        still preserving the distinctive sour taste of yogurt. Like many types,
+        strained yogurt is often made from milk enriched by boiling off some
+        water content, or by adding extra butterfat and powdered milk. In Europe
+        and North America, it is often made from low-fat or fat-free cow's milk.
+        In Iceland, a similar product named skyr is made.
+      </p>
+      <a
+        href="https://en.wikipedia.org/wiki/Strained_yogurt"
+        target="_blank"
+        class="learn-more"
+        >Learn more on wikipedia</a
+      >
+      <button class="buyButton">Buy Greek Yogurt</button>
+      <p class="footer">
+        This page was built by Immaculate Okoruwa taught by Matt Delac
+        <br />
+        <a href="https://www.delac.io/" target="_blank"> Matt Delac </a>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        alert("Thank you, " + name + "! We'll be in touch by email.");
+      }
+      let buyButton = document.querySelector(".buyButton");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
